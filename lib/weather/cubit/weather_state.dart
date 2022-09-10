@@ -8,7 +8,8 @@ class WeatherInitial extends WeatherState {}
 class WeatherLoadingState extends WeatherState {}
 
 class WeatherLoadedState extends WeatherState {
-  WeatherLoadedState({weather});
+  final weather;
+  WeatherLoadedState(this.weather);
 }
 
 class WeatherErrorState extends WeatherState {}

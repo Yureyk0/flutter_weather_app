@@ -10,7 +10,7 @@ import 'package:weather_repository/weather_repository.dart'
 
 part 'weather_state.dart';
 
-class WeatherCubit extends HydratedCubit<WeatherState> {
+class WeatherCubit extends Cubit<WeatherState> {
   WeatherCubit(this._weatherRepository) : super(WeatherInitial());
 
   final WeatherRepository _weatherRepository;
@@ -23,7 +23,7 @@ class WeatherCubit extends HydratedCubit<WeatherState> {
     try {
       final weather = await _weatherRepository.getWeather(city);
 
-      emit(WeatherLoadedState(weather: weather));
+      emit(WeatherLoadedState(weather));
     } on Exception {
       emit(WeatherErrorState());
     }
@@ -33,21 +33,21 @@ class WeatherCubit extends HydratedCubit<WeatherState> {
     try {
       final weather = await _weatherRepository.getWeather(city!);
 
-      emit(WeatherLoadedState(weather: weather));
+      emit(WeatherLoadedState(weather));
     } on Exception {
       emit(state);
     }
   }
 
-  @override
-  WeatherState? fromJson(Map<String, dynamic> json) {
-    // TODO: implement fromJson
-    throw UnimplementedError();
-  }
+  // @override
+  // WeatherState? fromJson(Map<String, dynamic> json) {
+  //   // TODO: implement fromJson
+  //   throw UnimplementedError();
+  // }
 
-  @override
-  Map<String, dynamic>? toJson(WeatherState state) {
-    // TODO: implement toJson
-    throw UnimplementedError();
-  }
+  // @override
+  // Map<String, dynamic>? toJson(WeatherState state) {
+  //   // TODO: implement toJson
+  //   throw UnimplementedError();
+  // }
 }

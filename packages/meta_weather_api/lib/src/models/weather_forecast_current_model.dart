@@ -3,7 +3,7 @@ import 'weater_forecast_condition_model.dart';
 class Current {
   int? lastUpdatedEpoch;
   String? lastUpdated;
-  int? tempC;
+  double? tempC;
   double? tempF;
   int? isDay;
   Condition? condition;
@@ -11,17 +11,17 @@ class Current {
   double? windKph;
   int? windDegree;
   String? windDir;
-  int? pressureMb;
-  int? pressureIn;
-  int? precipMm;
-  int? precipIn;
+  double? pressureMb;
+  double? pressureIn;
+  double? precipMm;
+  double? precipIn;
   int? humidity;
   int? cloud;
-  int? feelslikeC;
+  double? feelslikeC;
   double? feelslikeF;
-  int? visKm;
-  int? visMiles;
-  int? uv;
+  double? visKm;
+  double? visMiles;
+  double? uv;
   double? gustMph;
   double? gustKph;
 

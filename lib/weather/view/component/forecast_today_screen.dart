@@ -9,12 +9,13 @@ class ForecastTodayScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // context.read<WeatherCubit>().fetchWeather('Zhytomyr');
+    context.read<WeatherCubit>().fetchWeather('Zhytomyr');
     return BlocConsumer<WeatherCubit, WeatherState>(
         listener: (((context, state) {
       log(state.toString());
     })), builder: (context, state) {
       if (state is WeatherLoadedState) {
+        log(state.weather.current.tempC.toString());
         return Column(
           children: [
             Container(
