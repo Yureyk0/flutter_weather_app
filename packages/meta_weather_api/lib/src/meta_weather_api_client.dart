@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:http/http.dart' as http;
 import 'package:meta_weather_api/meta_weather_api.dart';
@@ -29,7 +30,7 @@ class MetaWeatherApiClient {
       'aqi': 'no',
       'days': '10'
     };
-
+    log('message');
     final weatherRequest = Uri.https(Constants.WEATHER_BASE_URL_DOMAIN,
         Constants.WEATHER_FORECAST_TODAY_PATH, queryParameters);
 
