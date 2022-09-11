@@ -50,7 +50,7 @@ class WeatherView extends StatelessWidget {
               bottom: const TabBar(
                 tabs: [
                   Tab(text: 'Today'),
-                  Tab(text: 'Today'),
+                  Tab(text: 'Tommorow'),
                   Tab(text: 'Today'),
                 ],
               ),
@@ -59,11 +59,11 @@ class WeatherView extends StatelessWidget {
               children: [
                 BlocProvider.value(
                   value: context.read<WeatherCubit>(),
-                  child: ForecastTodayScreen(),
+                  child: const ForecastTodayScreen(),
                 ),
                 BlocProvider.value(
                   value: context.read<WeatherCubit>(),
-                  child: ForecastTommorowScreen(),
+                  child: const ForecastTommorowScreen(),
                 ),
                 Icon(Icons.directions_car, size: 350),
               ],

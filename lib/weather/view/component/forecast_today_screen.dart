@@ -30,7 +30,7 @@ class ForecastTodayScreen extends StatelessWidget {
         final String srcImage = forecastCurrent.condition.icon;
         final String fullSrcImage = srcImage.substring(20, srcImage.length);
         DateTime date = DateTime.fromMillisecondsSinceEpoch(
-            forecastCurrent.lastUpdatedEpoch * 1000);
+            state.weather.forecast.forecastday[0].dateEpoch * 1000);
         final String fullDate = DateFormat('EEEEE, d MMMM').format(date);
         log(fullSrcImage);
         return Column(
