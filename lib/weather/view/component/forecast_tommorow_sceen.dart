@@ -8,8 +8,8 @@ import 'package:intl/intl.dart';
 
 import 'forecast_hourly_list.dart';
 
-class ForecastTodayScreen extends StatelessWidget {
-  const ForecastTodayScreen({Key? key}) : super(key: key);
+class ForecastTommorowScreen extends StatelessWidget {
+  const ForecastTommorowScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

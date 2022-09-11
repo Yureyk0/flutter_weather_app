@@ -5,8 +5,7 @@ import 'package:flutter_weather_app/weather/cubit/weather_cubit.dart';
 
 import 'package:weather_repository/weather_repository.dart';
 
-import 'component/forecast_today_screen.dart';
-import 'component/textfield_search_city_w.dart';
+import 'component/component.dart';
 
 class WeatherPage extends StatelessWidget {
   const WeatherPage({super.key});
@@ -62,7 +61,10 @@ class WeatherView extends StatelessWidget {
                   value: context.read<WeatherCubit>(),
                   child: ForecastTodayScreen(),
                 ),
-                Icon(Icons.directions_transit, size: 350),
+                BlocProvider.value(
+                  value: context.read<WeatherCubit>(),
+                  child: ForecastTommorowScreen(),
+                ),
                 Icon(Icons.directions_car, size: 350),
               ],
             ),
