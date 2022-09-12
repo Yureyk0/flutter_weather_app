@@ -1,6 +1,9 @@
 # flutter_weather_app
 
-A new Flutter project.
+A new Flutter project.![photo_2022-09-12_03-15-14 (2)](https://user-images.githubusercontent.com/60176477/189555222-a07b01c8-9262-46ad-9b7f-98ed9f54fd78.jpg)
+![photo_2022-09-12_03-15-22](https://user-images.githubusercontent.com/60176477/189555226-24050685-3228-4143-a21f-bef936908416.jpg)
+![photo_2022-09-12_03-15-14](https://user-images.githubusercontent.com/60176477/189555227-20e82b0d-c03d-4f25-a0eb-04f14bf9587a.jpg)
+
 
 ## Getting Started
 
