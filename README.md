@@ -1,8 +1,9 @@
 # flutter_weather_app
+![image](https://user-images.githubusercontent.com/60176477/189555262-89262ee1-2d2e-412f-95aa-d1d20b7f256d.png)
+![image](https://user-images.githubusercontent.com/60176477/189555277-2aeb9c0f-94aa-4e38-9ed6-6be2d70edc5a.png)
+![image](https://user-images.githubusercontent.com/60176477/189555289-be4386c3-fd14-4ca0-bc4a-ad28fcac4fdb.png)
 
-A new Flutter project.![photo_2022-09-12_03-15-14 (2)](https://user-images.githubusercontent.com/60176477/189555222-a07b01c8-9262-46ad-9b7f-98ed9f54fd78.jpg)
-![photo_2022-09-12_03-15-22](https://user-images.githubusercontent.com/60176477/189555226-24050685-3228-4143-a21f-bef936908416.jpg)
-![photo_2022-09-12_03-15-14](https://user-images.githubusercontent.com/60176477/189555227-20e82b0d-c03d-4f25-a0eb-04f14bf9587a.jpg)
+A new Flutter project.
 
 
 ## Getting Started
