@@ -9,7 +9,7 @@ class WeatherEmpty extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const Text('🏙️', style: TextStyle(fontSize: 64)),
+        const Text('🏙️', style: TextStyle(fontSize: 55)),
         Text(
           'Please Select a City!',
           style: theme.textTheme.headline5,

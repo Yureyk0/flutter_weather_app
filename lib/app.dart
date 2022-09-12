@@ -24,7 +24,11 @@ class WeatherAppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: WeatherPage(),
+      theme: ThemeData(
+        fontFamily: 'MavenPro',
+        
+      ),
+      home: SafeArea(child: WeatherPage()),
     );
   }
 }

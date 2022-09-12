@@ -17,14 +17,14 @@ class HourlyList extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
-                    'Today',
+                    'Hourly',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 25,
                         fontWeight: FontWeight.w600),
                   ),
                   Text(
-                    '7 day >',
+                    '>',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
